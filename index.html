@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A random password generator project">
+    <meta name="author" content="Godwin Wisdom">
+    <title>Random Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Generate a <br><span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+
+        <button onclick="generatePassword()" id="generate-btn">Generate passwords</button>
+
+        <div class="password-box-holder">
+            <div class="bottom-padding">
+                <input type="text" id="password-one">
+                <button id="copy1" onclick="copyPassword1()">Copy</button>
+            </div>
+
+            <div class="bottom-padding2">
+                <input type="text" id="password-two">
+                <button id="copy2" onclick="copyPassword2()">Copy</button>
+            </div> 
+        </div>
+
+        <div class="author">
+            Developed by <span><a href="https://twitter.com/Gwisdom944" target="_blank">Godwin Wisdom</a></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

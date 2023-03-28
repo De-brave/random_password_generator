@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styles for the body */
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1C1C1C;
+}
+
+/* Styles for the contaner div */
+.container {
+    background: #1F2937;
+    width: 550px;
+    height: 550px;
+    padding: 4rem 2rem;
+}
+
+/* Styles for Typography */
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -2.5%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+h1 span {
+    color: #4ADF86;
+}
+p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+/* Styles for generate button element */
+#generate-btn {
+    width: 191px;
+    height: 42px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #10B981;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 35px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+#generate-btn:hover {
+    background: #0e7855;
+    font-size: 17.5px;
+    width: 195px;
+}
+
+/* Styles for for the password box holder div and copy buttons */
+.password-box-holder {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    border-top:  1px solid #2F3E53;
+    border-bottom:  1px solid #2F3E53;
+}
+
+.bottom-padding {
+    padding-bottom: 35px;
+}
+
+#password-one,
+#password-two {
+    width: 221px;
+    height: 39px;
+    background: #273549;
+    font-size: 16px;
+    padding: 4px 15px;
+    color: #55F991;
+    border-radius: 6px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+#copy1, #copy2 {
+    margin-top: 5px;
+    width: 80px;
+    height: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #10B981;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+#copy2 {
+    display: flex;
+    margin-left: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#copy1:hover {
+    background: #0e7855;
+    font-size: 17.5px;
+    width: 85px;
+    height: 27px;
+}
+
+#copy2:hover {
+    background: #0e7855;
+    font-size: 17.5px;
+    width: 85px;
+    height: 27px;
+}
+
+/* Styles for the author div and links */
+.author {
+    text-align: center;
+    margin-top: 40px;
+    color: #a5a5a5;
+    font-size: 13px;
+}
+
+.author span {
+    color: #4ADF86;
+}
+
+a {
+    text-decoration: none;
+    color: #f0f0f0;
+    transition: .3s ease-in-out;
+}
+
+a:hover {
+    color: #4ADF86;
+    font-size: 15px;
+}
+
+
+/* Styles for screen size equal to or less than 768px */
+@media (max-width: 768px) {
+
+    .container {
+        width: 300px;
+        height: 590px;
+        padding: 2rem 1.5rem;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 19px;
+        font-weight: 200;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    #generate-btn {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 30px;
+
+    }
+
+    .password-box-holder {
+        display: block;
+        padding-top: 15px;
+        border-top:  1px solid #2F3E53;
+    }
+
+    .bottom-padding {
+        padding-bottom: 0px;
+    }
+
+    .bottom-padding2 {
+        padding-bottom: 15px;
+    }
+
+    #password-one {
+        width: 250px;
+        
+    }
+
+    #password-two {
+        margin-top: 15px;
+        width: 250px;
+    }
+
+    #copy1 {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-around;
+        margin-top: 5px;
+    }
+
+    #copy2 {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+}
